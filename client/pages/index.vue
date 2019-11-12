@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        client
+        laravel-nuxt-docker
       </h1>
       <h2 class="subtitle">
-        My super Nuxt.js project
+        This is the Laravel & NuxtJS & Docker project.
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
