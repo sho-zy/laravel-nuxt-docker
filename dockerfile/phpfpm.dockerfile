@@ -11,4 +11,4 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 ENV PATH $PATH:/composer/vendor/bin
-WORKDIR /var/www/laravel
+WORKDIR /var/www/homedir

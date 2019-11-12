@@ -8,7 +8,7 @@ services:
     volumes:
       - ./nginx/conf/conf.d/:/etc/nginx/conf.d/
       - ./nginx/log/:/var/log/nginx/
-      - ./public:/var/www/laravel/public
+      - ./public:/var/www/homedir/public
     depends_on:
       - nuxt
       - phpfpm
@@ -17,13 +17,13 @@ services:
       context: .
       dockerfile: ./dockerfile/nuxt.dockerfile
     volumes:
-      - .:/app
+      - .:/var/www/homedir
   phpfpm:
     build:
       context: .
       dockerfile: ./dockerfile/phpfpm.dockerfile
     volumes:
-      - .:/var/www/laravel
+      - .:/var/www/homedir
     environment:
       DB_HOST: mysql
       DB_DATABASE: mysql_db
